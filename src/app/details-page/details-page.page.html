@@ -1,8 +1,39 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-label (click)="back();">Back</ion-label>
+    <ion-icon (click)="back();" name="arrow-back-outline"></ion-icon>
       <ion-title>
           Photographer
       </ion-title>
   </ion-toolbar>
 </ion-header>
+
+<ion-content [fullscreen]="true">
+  <div style="margin-top:25px"></div>
+  <ion-item>
+    <ion-label lines="none">
+      <h1 class="merchant">Merchant</h1>
+      <h3 class="merchant">{{merchantName}}</h3>
+    </ion-label>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-label position="stacked">Amount Paid</ion-label>
+    <ion-label class="ion-text-end">${{amountPaid}}</ion-label> 
+  </ion-item>
+  <ion-item lines="none">
+    <ion-label position="stacked">Amount Remaining</ion-label>
+    <ion-label class="ion-text-end">${{amountRemaining}}</ion-label> 
+  </ion-item>
+  <ion-item lines="none">
+    <ion-label position="stacked">Total Amount</ion-label>
+    <ion-label class="ion-text-end">${{totalAmount}}</ion-label> 
+  </ion-item>
+  <ion-item lines="none">
+    <ion-label position="stacked">Next Payment</ion-label>
+    <ion-label class="ion-text-end">${{totalAmount}}</ion-label> 
+  </ion-item>
+    <canvas #chart></canvas>
+
+    <!-- Set up a container element for the button -->
+  <div id="paypal-button-container"></div>
+
+</ion-content>
