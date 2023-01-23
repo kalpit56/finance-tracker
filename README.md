@@ -13,10 +13,15 @@
   - On the main page of the project on GitHub, click on the green button that says "<> Code"
   - From there, copy the HTTPS link that is provided
   - On Power Shell and when you are in the folder you created, run ``` git clone <link you copied> ```
+  - Now cd into the folder that was just cloned from GitHub. This is the GitHub tracked folder of the project.
   - Now the project is on your local machine
 
 ### Install:
   - Run:
-    - npm install -g @ionic/cli native-run cordova-res
+    - ``` npm install -g @ionic/cli native-run cordova-res ```
+
+### Starting the Project
+  - Run:
+    - ``` ionic serve --lab ```
 
 
